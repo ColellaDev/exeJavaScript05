@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: rgb(255, 255, 255);
+    --txt-color: hsla(240, 6%, 21%, 1);
+
+    --bt-bg-color: hsla(240, 9%, 89%, 1);
+    --bt-txt-color: hsla(240, 6%, 21%, 1);
+
+    --bt-bg-color-hover: hsla(193.935, 98%, 31%, 1);
+    --bt-txt-color-hover: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--bg-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    color: var(--txt-color);
+
+    display: grid;
+    min-height: 100vh;
+}
+
+.main {  
+    align-self:  center;
+     justify-self: center;
+     display: flex;
+     gap: 19rem;
+ }
+
+ .container {
+    width: 40rem;
+    margin-top: 3rem;
+ }
+
+.timer {
+    display: flex;
+    justify-content: center;
+}
+
+ .controls { 
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    gap: 4rem;
+ }
+
+ .music {
+    width: 40rem;
+    height: 33rem;
+ }
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.music svg path:nth-child(1){
+    fill: var(--bt-bg-color)
+}
+
+.music svg path:nth-child(2){
+    fill: var(--bt-txt-color)
+}
+
+
+
+
+
+
+
+
